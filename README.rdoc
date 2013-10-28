@@ -1,1 +1,24 @@
-Testing out rails
+TDD Notes
+
+-Progress w/o process? You're gonna have a bad time
+-Take the time to write tests NOW! They help you identify problems before you deploy and have to go back and fix things
+
+TDD:
+	-Decide what the code will do
+	-Write a test that will pass if the code does that thing
+	-Run the test, see it fail
+	-Write the code
+	-Run the test, see it pass
+--Design and plan before you code
+*TDD encourages design of testable code*
+
+If your tests are too complicated before you've even really written out the code, that's a big red flag
+
+Some things can be too hard to test
+Some tests are trivial
+Overtesting can be possible
+
+Start with a clear idea of what you'd like to do
+Don't try to keep everything in your head - hubris is a killer
+
+Learn TDD now - avoid technical debt
