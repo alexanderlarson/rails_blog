@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
-	  @post = Post.new(params[:post])
+	  @post = Post.new(params[:post]).permit(:title, :text)
 
 	  if @post.save
 	  	redirect_to posts_path, :notice => "Post created."
@@ -32,7 +32,7 @@ class PostsController < ApplicationController
 	end
 
 	def show
-		@post = Post.find(params[:id])
+	@post = Post.find(params[:id]).permit(:title, :text)
 	end
 	 
 	def destroy
